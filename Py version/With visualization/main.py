@@ -1,5 +1,20 @@
 import pygame
 
-Width, Height = 800,400
+Width, Height = 1500,700
 
-window = pygame.display.set_mode((Width, Height))
+Window = pygame.display.set_mode((Width, Height))
+
+
+def main():
+
+    run = True
+
+    while run:
+        pygame.display.update()
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                quit()
+                run = False
+
+main()
