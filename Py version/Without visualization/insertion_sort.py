@@ -6,4 +6,5 @@ def InsertionSort(Board):
             Board[j+1] = Board[j]
 
         Board[j+1] = mem
+        
     return Board
