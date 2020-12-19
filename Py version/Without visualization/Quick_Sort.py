@@ -1,19 +1,15 @@
 import random
 
-def Swap(Board,first, last, pivot):
-    print("pivot", pivot)
-    print("last", last)
-    Board[pivot], Board[last] = Board[last], Board[pivot]
+def partition(Board, first, last):
+    pivot = Board[last]
+    i = first
 
-    j = first
-
-    for i in range(last-1):
-        if Board[i] <= Board[last]:
+    for j in range(first,last):
+        if Board[j] < pivot:
             Board[i], Board[j] = Board[j], Board[i]
-            j += 1
-    Board[last], Board[j] = Board[j], Board[last]
+            i += 1
 
-    return j
+    Board[i], Board[last] = Board[last], Board[i]
 
 def select(Board, first, last):
     print("first", first)
@@ -26,9 +22,7 @@ def select(Board, first, last):
 
 def QuickSort(Board, first, last):
     if first < last:
-        pivot = select(Board, first, last)
-        print("pivot : ", pivot)
-        pivot = Swap(Board, first, last, pivot)
+        get = Swap
 
         QuickSort(Board, first, pivot-1)
         QuickSort(Board, pivot+1, last)
