@@ -11,21 +11,15 @@ def partition(Board, first, last):
 
     Board[i], Board[last] = Board[last], Board[i]
 
-def select(Board, first, last):
-    print("first", first)
-    print("last", last)
-    num = random.randrange(first, last)
-    pivot = Board[num]
-
-    return pivot
+    return i
 
 
 def QuickSort(Board, first, last):
     if first < last:
-        get = Swap
+        p = partition(Board, first, last)
 
-        QuickSort(Board, first, pivot-1)
-        QuickSort(Board, pivot+1, last)
+        QuickSort(Board, first, p-1)
+        QuickSort(Board, p+1, last)
 
 
 
