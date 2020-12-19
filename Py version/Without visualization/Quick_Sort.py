@@ -30,7 +30,7 @@ def QuickSort(Board, first, last):
         print("pivot : ", pivot)
         pivot = Swap(Board, first, last, pivot)
 
-        QuickSort(Board, pivot-1)
+        QuickSort(Board, first, pivot-1)
         QuickSort(Board, pivot+1, last)
 
 
