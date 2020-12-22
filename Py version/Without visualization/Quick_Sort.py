@@ -1,4 +1,3 @@
-import random
 
 def partition(Board, first, last):
     pivot = Board[last]
