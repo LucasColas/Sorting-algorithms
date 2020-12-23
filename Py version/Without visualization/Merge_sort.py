@@ -28,5 +28,6 @@ def Merge(Board_A,Board_B):
 
     return [Board_B[0]] + Merge(Board_A, Board_B[1:])
 
-Board = [20,5,1,15,9,3, 100, 50,32,33,10,7,8,25,42,19,18,77,88]
+Board = random_list()
+print(Board)
 print(Mergesort(Board))
