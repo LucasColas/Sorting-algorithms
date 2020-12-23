@@ -1,4 +1,5 @@
 # Merge sort algorithm
+from random_list_of_int import random_list
 
 def Mergesort(Board):
   if len(Board) <= 1:
