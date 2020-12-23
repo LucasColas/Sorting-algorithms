@@ -30,4 +30,4 @@ def Merge(Board_A,Board_B):
 
 Board = random_list()
 print("Before ", Board)
-print("After",Mergesort(Board))
+print("After", Mergesort(Board))
