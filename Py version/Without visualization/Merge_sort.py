@@ -29,5 +29,5 @@ def Merge(Board_A,Board_B):
     return [Board_B[0]] + Merge(Board_A, Board_B[1:])
 
 Board = random_list()
-print(Board)
-print(Mergesort(Board))
+print("Before ", Board)
+print("After",Mergesort(Board))
