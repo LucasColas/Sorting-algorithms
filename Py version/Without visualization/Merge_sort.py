@@ -1,3 +1,5 @@
+# Merge sort algorithm
+
 def Mergesort(Board):
   if len(Board) <= 1:
     return Board
@@ -5,7 +7,6 @@ def Mergesort(Board):
   else:
     #print(len(Board)//2)
     return Merge(Mergesort(Board[0:len(Board)//2]), Mergesort(Board[len(Board)//2:len(Board)]))
-
 
 
 def Merge(Board_A,Board_B):
