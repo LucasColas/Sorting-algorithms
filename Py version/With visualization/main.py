@@ -1,5 +1,5 @@
 import pygame
-from Without_visualization.Bubble_sort import BubbleSort
+from .Without_visualization.Bubble_sort import BubbleSort
 
 Width, Height = 1500,700
 
