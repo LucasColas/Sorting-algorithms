@@ -12,5 +12,5 @@ def selection_sort(board):
 
   return board
 
-trial = [4,3,6,11,2,5]
-print(selection_sort(trial))
+#trial = [4,3,6,11,2,5]
+#print(selection_sort(trial))

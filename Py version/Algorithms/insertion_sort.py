@@ -12,5 +12,5 @@ def InsertionSort(Board):
     return Board
 
 
-Board = [3,4,1,9,7,11,10]
-print(InsertionSort(Board))
+#Board = [3,4,1,9,7,11,10]
+#print(InsertionSort(Board))

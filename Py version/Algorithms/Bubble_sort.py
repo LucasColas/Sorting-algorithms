@@ -17,5 +17,5 @@ def BubbleSort2(Board):
   return Board
 
 board = [4,5,1,2,99,9,7,11,3]
-print(board)
-print(BubbleSort2(board))
+#print(board)
+#print(BubbleSort2(board))

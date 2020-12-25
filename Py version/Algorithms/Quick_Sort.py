@@ -24,5 +24,5 @@ def QuickSort(Board, first, last):
 
 Board = [3,2,9,6,11,4]
 
-QuickSort(Board, 0, len(Board)-1)
-print(Board)
+#QuickSort(Board, 0, len(Board)-1)
+#print(Board)

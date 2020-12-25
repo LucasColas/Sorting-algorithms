@@ -28,5 +28,3 @@ def main():
                 run = False
 
 main()
-
-BubbleSort([3,4,1,9,11,7])
