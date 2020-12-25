@@ -1,5 +1,5 @@
 import pygame
-from Without Visualization.Bubble_sort import Bubble_sort
+from Without_Visualization.Bubble_sort import BubbleSort
 
 Width, Height = 1500,700
 
@@ -23,3 +23,5 @@ def main():
                 run = False
 
 main()
+
+BubbleSort([3,4,1,9,11,7])
