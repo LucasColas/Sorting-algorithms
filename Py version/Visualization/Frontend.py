@@ -2,7 +2,6 @@ import pygame
 
 def greatest_value(Board):
     best =  Board[0]
-
     for indx, value in enumerate(Board):
         if value > best:
             best = value
@@ -16,3 +15,5 @@ def plot(Board, Window, Width):
 
     for i in range(Board):
         pygame.draw.line(Window,Black, ((i*(1/len(Board)))*Width,0), (i*(1/len(Board)), (Board[i]//best))*Width)
+
+        

@@ -1,3 +1,6 @@
+from Visualization.Frontend import plot
+import pygame
+
 def InsertionSort(Board):
     for i in range(1, len(Board)):
         mem = Board[i]
